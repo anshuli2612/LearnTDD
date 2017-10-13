@@ -15,9 +15,11 @@ public class FizzBuzzTest {
 	}
 
 	@Test
-	public void test() {
+	public void should_return_fizz_number_dividable_by_3() {
 		
+		FizzBuzz fizzBuzzObj = new FizzBuzz();
 		
+		assertEquals("fizz", fizzBuzzObj.checkNaturalNumber(6));
 	}
 
 }
