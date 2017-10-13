@@ -4,6 +4,10 @@ public class FizzBuzz {
 
 	public String checkNaturalNumber(int i) {
 		
+		if( i == 0){
+			
+			throw new IllegalArgumentException();
+		}
 		if( i%15 == 0 ) {
 			
 			return "fizzbuzz";

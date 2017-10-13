@@ -45,5 +45,13 @@ public class FizzBuzzTest {
 		
 		assertEquals("28", fizzBuzzObj.checkNaturalNumber(28));
 	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void should_throw_exception_if_number_is_zero() {
+		
+		FizzBuzz fizzBuzzObj = new FizzBuzz();
+		
+		fizzBuzzObj.checkNaturalNumber(0);
+	}
 
 }
