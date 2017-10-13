@@ -54,4 +54,12 @@ public class FizzBuzzTest {
 		fizzBuzzObj.checkNaturalNumber(0);
 	}
 
+	@Test(expected = IllegalArgumentException.class)
+	public void should_throw_exception_if_number_is_negative() {
+		
+		FizzBuzz fizzBuzzObj = new FizzBuzz();
+		
+		fizzBuzzObj.checkNaturalNumber(-10);
+	}
+
 }
