@@ -30,5 +30,20 @@ public class FizzBuzzTest {
 		assertEquals("buzz", fizzBuzzObj.checkNaturalNumber(10));
 	}
 
+	@Test
+	public void should_return_fizz_number_dividable_by_15() {
+		
+		FizzBuzz fizzBuzzObj = new FizzBuzz();
+		
+		assertEquals("fizzbuzz", fizzBuzzObj.checkNaturalNumber(30));
+	}
+	
+	@Test
+	public void should_return_same_number_not_dividable_by_none() {
+		
+		FizzBuzz fizzBuzzObj = new FizzBuzz();
+		
+		assertEquals("28", fizzBuzzObj.checkNaturalNumber(28));
+	}
 
 }
